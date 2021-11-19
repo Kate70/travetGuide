@@ -1,0 +1,130 @@
+
+
+*{
+    box-sizing: border-box;
+    padding:0; 
+    margin:0;
+    
+
+}
+
+body{
+   
+   background-color: black;
+   background-image:  url('./../img/architecture.jpg') ;
+    
+    background-size: 100% auto;
+background-repeat: no-repeat;
+background-position: top center;
+    font-family: 'Gilroy';
+    color: blanchedalmond;
+}
+.header{
+    padding-top: 64px;
+}
+.container-wide{
+  border: 1px solid beige;
+    
+   width: 1690px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+.row{
+    display: flex;
+}
+.space-between{
+    justify-content: space-between;
+}
+.nav ul{
+    margin:0 ;
+    list-style: none;
+    display: flex;
+    font-weight: 700;
+    font-size: 18px;
+}
+.nav li+li{
+    margin-left: 40px;
+}
+.nav a{
+    color: blanchedalmond;
+    text-decoration: none;
+    transition:  color 0.2s easy-in;
+    
+}
+.nav a:hover{
+    color: rgb(204, 157, 96);
+}
+.accaunt{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 17px;
+    color: blanchedalmond;
+    transition:  color 0.2s easy-in;
+}
+.accaunt:hover{
+    color: rgb(204, 157, 96);
+}
+.nav-wrapper{
+    margin-bottom: 198px;
+}
+/*HERO*/
+.hero {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+   padding-left: 15px;
+   padding-right: 15px;
+max-width: 950px;
+text-decoration: none;
+transition: transform 0.5s cubic-bezier(0.660, 0.21, 0.290, 1.6);
+ }
+
+.hero:hover{
+    transform: translateY(-5%);
+} 
+.hero-title-category {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: burlywood;
+    padding-left: 104px;
+    position: relative;
+
+ }
+ .hero-title-category::before {
+     position: absolute;
+     left: 0;
+     top: 50%;
+     display: block;
+     transform: translateY(-50%);
+     content: "";
+     width: 72px;
+     height: 2px;
+     background-color: #fff;
+    
+}
+.hero-title {
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.13;
+    font-size: 80px;
+    color: burlywood;
+    margin-bottom: 32px;
+ }
+.hero-scroll { 
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 22;
+    color: burlywood;
+}
+.hero-scroll::after{
+    display: block;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url('./../img/arrow_downward_24px.svg');
+}
